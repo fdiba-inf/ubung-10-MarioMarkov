@@ -4,7 +4,7 @@ public class Ellipse  extends Figure {
     
 
     public Ellipse() {
-      super(new Point(0, 0));
+      super(new Point(0, 0),1,1);
     }
 
     public Ellipse(Point startPoint, double a, double b) {
@@ -29,7 +29,7 @@ public class Ellipse  extends Figure {
 
     @Override
     public String getType() {
-        return (a == b) ? "Circle" : "Ellipse";
+        return (side1 == side2) ? "Circle" : "Ellipse";
     }
 
     @Override
